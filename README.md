@@ -13,3 +13,7 @@ To download an individual file, open it and select **Download raw file**. To dow
 ## License
 
 Use of the software is subject to the license included with the distribution.
+
+## Bugs and feature requests
+
+Use [GitHub Issues](https://github.com/jonpower/editors/issues/new/choose) to report a bug or request a feature.

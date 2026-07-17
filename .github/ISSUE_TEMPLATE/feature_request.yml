@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest an improvement for EDT or TPU
+title: "[Feature]: "
+body:
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      description: Which editor would this improve?
+      options:
+        - EDT
+        - TPU
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What are you trying to accomplish, and what makes it difficult today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed feature
+      description: Describe how you would like the editor to behave.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any workarounds or other approaches you have tried.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add examples, screenshots, or other useful context. Remove private information before posting.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched the existing issues for a similar request.
+          required: true

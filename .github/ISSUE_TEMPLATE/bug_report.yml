@@ -1,0 +1,87 @@
+name: Bug report
+description: Report a reproducible problem with EDT or TPU
+title: "[Bug]: "
+body:
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      description: Which editor has the problem?
+      options:
+        - EDT
+        - TPU
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Enter the version shown by the editor.
+      placeholder: "Example: V1.05-0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows x86-64
+        - Windows ARM64
+        - macOS Apple Silicon
+        - Linux x86-64
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Describe what went wrong and what you were trying to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence of commands or actions that reproduces the problem.
+      placeholder: |
+        1. Start the editor with ...
+        2. Open ...
+        3. Run ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the exact error message or terminal output, if any.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add screenshots, sample files, or other useful context. Remove passwords, license data, and other private information before posting.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched the existing issues for this problem.
+          required: true
+        - label: I removed passwords, license data, and other private information.
+          required: true
