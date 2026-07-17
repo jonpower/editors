@@ -1,0 +1,15 @@
+# Editors Downloads
+
+This repository provides downloadable EDT and TPU editor software and documentation.
+
+## Downloads
+
+- `editors.zip` — complete distribution archive (when uploaded)
+- [`exe/`](exe/) — EDT and TPU executables
+- [`docs/`](docs/) — editor documentation
+
+To download an individual file, open it and select **Download raw file**. To download everything, use **Code → Download ZIP**.
+
+## License
+
+Use of the software is subject to the license included with the distribution.
